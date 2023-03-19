@@ -1,0 +1,6 @@
+@import './mixins';
+
+.app-page {
+  @include flex-center(column);
+  height: 100%;
+}
