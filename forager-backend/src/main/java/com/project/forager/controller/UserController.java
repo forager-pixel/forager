@@ -12,7 +12,7 @@ import com.project.forager.entity.User;
 import com.project.forager.repository.UserRepository;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://localhost:4200")
 public class UserController {
     private final UserRepository userRepository;
 

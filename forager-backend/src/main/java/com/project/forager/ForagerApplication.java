@@ -20,10 +20,6 @@ public class ForagerApplication {
 	@Bean
 	CommandLineRunner init(UserRepository userRepository) {
 		return args -> {
-			Stream.of("John", "Julie", "Jennifer", "Helen").forEach(name -> {
-				User user  = new User(name, name.toLowerCase() + "@domain.com");
-				userRepository.save(user);
-			});
 			userRepository.findAll().forEach(System.out::println);
 		};
 	}

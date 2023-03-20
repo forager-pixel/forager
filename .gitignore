@@ -78,5 +78,6 @@ testem.log
 Thumbs.db
 
 # Certificates
+*.p12
 *.crt
 
